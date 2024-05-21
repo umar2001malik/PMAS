@@ -5,24 +5,29 @@ const FAQs = () => {
   const faqsData = [
     {
       id: 1,
-      question: "What is your return policy?",
-      answer: "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
+      question: "What is Aridian Array?",
+      answer: "Aridian Array is a vibrant community and platform for students and graduates of PMAS Arid Agriculture University Rawalpindi, focused on fostering innovation, collaboration, and leadership development."
     },
     {
       id: 2,
-      question: "Do you offer free shipping?",
-      answer: "Yes, we offer free shipping on all orders over $50."
+      question: "Who can join Aridian Array?",
+      answer: "Aridian Array is open to all students who are interested in innovation and community development."
     },
     {
       id: 3,
-      question: "What is your return policy?",
-      answer: "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
+      question: "What kind of events does Aridian Array host?",
+      answer: "The community organizes various events such as workshops, seminars, and hackathons."
     },
     {
       id: 4 ,
-      question: "What is your return policy?",
-      answer: "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
+      question: "How can I get involved in the Aridian Array community?",
+      answer: "You can get involved by attending events, volunteering for initiatives, or by becoming a member of the organization committees"
     },
+    {
+      id: 5,
+      question:"What are some of the benefits of being involved in the community?",
+      answer:"Benefits include networking opportunities, professional growth, skill development, and being part of a supportive innovation-driven environment."
+    }
     // Add more FAQs as needed
   ];
 
@@ -49,7 +54,7 @@ const FAQs = () => {
       </div>
 
       {faqsData.map(faq => (
-        <div key={faq.id} className="mb-4  ">
+        <div key={faq.id} className="mb-12  ">
           <div className="flex justify-between items-center ">
             <div className="text-lg font-semibold">{faq.question}</div>
             <button

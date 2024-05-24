@@ -12,7 +12,7 @@ import FAQs from './FAQs'
 const Middle = () => {
   return (
     // bg-gray-200
-    <div className=' bg-gray-200'>
+    <div className=' bg-indigo-50'>
       <div className='md:px-32 mx-4'>
         {/* <Carousel/> */}
         <Fact/>

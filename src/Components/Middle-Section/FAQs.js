@@ -44,11 +44,11 @@ const FAQs = () => {
   return (
     <div className="container mx-auto md:mb-28 mb-14 ">
        <div className="text-center mb-14">
-        <span className="block text-md text-blue-600">KNOW MORE?</span>
-        <h1 className="lg:text-4xl md:text-2xl text-xl font-medium  my-4">
+        <span className="block text-md text-blue-600 font-inter" style={{ letterSpacing: '3px' }}>KNOW MORE?</span>
+        <h1 className="lg:text-4xl md:text-2xl text-xl font-medium  my-4 font-Title">
           Frequently Asked Question?
         </h1>
-        <p className="my-2 text-center lg:text-xl md:text-sm text-slate-500">
+        <p className="my-2 text-center lg:text-xl md:text-sm text-slate-500 font-inter">
         Everything you need to know about the product and billing.
         </p>
       </div>
@@ -56,7 +56,7 @@ const FAQs = () => {
       {faqsData.map(faq => (
         <div key={faq.id} className="mb-12  ">
           <div className="flex justify-between items-center ">
-            <div className="text-lg font-semibold">{faq.question}</div>
+            <div className="text-lg font-semibold font-inter">{faq.question}</div>
             <button
               onClick={() => toggleFAQ(faq.id)}
               className="focus:outline-none"

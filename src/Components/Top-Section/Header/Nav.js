@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
         <ul className={`md:flex ${showMenu ? 'block' : 'hidden'}`}>
           {Links.map((link, index) => (
-            <li key={index} className="md:ml-8 lg:text-xl  md:text-xs text-xl  md:my-0 my-7">
+            <li key={index} className="md:ml-8 lg:text-xl  md:text-xs text-xl  md:my-0 my-7 font-inter">
               <a
                 href={link.link}
                 className="text-gray-800 hover:bg-blue-100 hover:text-blue-500 px-2 py-1 rounded-md transition-colors duration-300"

@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'; // Importing icons from react-icons
 import Image1 from '../../../Assests/Top/slider1.jpg';
 import Image2 from '../../../Assests/Top/slider2.png';
-import Image3 from '../../../Assests/Top/slider1.jpg';
-import Image4 from '../../../Assests/Top/slider2.png';
-import Image5 from '../../../Assests/Top/slider1.jpg';
-import Image6 from '../../../Assests/Top/slider2.png';
+import Image3 from '../../../Assests/Top/slider3.png';
+import Image4 from '../../../Assests/Top/slider1.jpg';
+import Image5 from '../../../Assests/Top/slider2.png';
+import Image6 from '../../../Assests/Top/slider3.png';
 import Button from '../../Reuseable-Component/Button';
 
 const Slider = () => {
@@ -21,8 +21,7 @@ const Slider = () => {
         setNumVisibleSlides(1); // Display 1 image for small screens (e.g., mobile)
       } else if (window.innerWidth < 768) {
         setNumVisibleSlides(1); // Display 2 images for medium screens (e.g., tablets)
-      }
-       else {
+      } else {
         setNumVisibleSlides(3); // Display 3 images for large screens (e.g., laptops and desktops)
       }
     };
@@ -38,6 +37,15 @@ const Slider = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  useEffect(() => {
+    const slideInterval = setInterval(() => {
+      setCurrentSlide((prev) => (prev === images.length - numVisibleSlides ? 0 : prev + 1));
+    }, 2000); // Change slide every 3 seconds
+
+    // Clear interval on component unmount or when currentSlide/numVisibleSlides changes
+    return () => clearInterval(slideInterval);
+  }, [currentSlide, numVisibleSlides]);
 
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev === 0 ? images.length - numVisibleSlides : prev - 1));
@@ -73,8 +81,8 @@ const Slider = () => {
           <FiChevronRight color="blue" size={24} />
         </button>
       </div>
-      <div className="flex justify-center mt-8  ">
-        <Button className="bg-blue-700"  text="Primary Action" onClick={() => console.log('Submitted')} />
+      <div className="flex justify-center mt-8">
+        <Button className="bg-blue-600 text-white" text="Primary Action" onClick={() => console.log('Submitted')} />
       </div>
     </div>
   );

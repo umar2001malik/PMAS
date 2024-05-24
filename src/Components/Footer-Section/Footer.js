@@ -4,11 +4,11 @@ import Social from '../../Assests/Footer/Social.png';
 
 const Footer = () => {
   const Links = [
-    { Name: 'About Us', link: '/' },
-    { Name: 'Sponsers', link: '/events' },
-    { Name: 'By Laws', link: '/about' },
-    { Name: 'Sitemap', link: '/elinity' },
-    { Name: 'Verify Certificate', link: '/elinity' },
+    { Name: 'About Us', link: '#' },
+    { Name: 'Sponsers', link: '#' },
+    { Name: 'By Laws', link: '#' },
+    { Name: 'Sitemap', link: '#' },
+    { Name: 'Verify Certificate', link: '#' },
   ];
 
   return (
@@ -23,7 +23,7 @@ const Footer = () => {
     <li key={index} className="md:ml-8 md:my-0 my-2">
       <a
         href={link.link}
-        className="text-gray-800 hover:bg-blue-100 hover:text-blue-500 px-2 py-1 rounded-md transition-colors duration-300"
+        className="text-gray-800 px-2 py-1 rounded-md transition-colors duration-300 font-inter"
       >
         {link.Name}
       </a>

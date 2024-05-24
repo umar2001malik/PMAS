@@ -17,12 +17,12 @@ const About = () => {
   return (
     <div className='md:mb-28 mb-14 mt-7 ' >
       <div className='text-center '>
-        <span className=' text-blue-600   ' style={{ letterSpacing: '3px' }}>ABOUT US</span>
-        <h1 className='lg:text-4xl md:text-2xl text-3xl  font-medium md:leading-[38px] lg:my-5 my-3'>
+        <span className=' text-blue-600 font-inter   ' style={{ letterSpacing: '3px' }}>ABOUT US</span>
+        <h1 className='lg:text-4xl md:text-2xl text-3xl  font-medium md:leading-[38px] lg:my-5 my-3 font-Title'>
           What is Aridian Array Software 
           Society?
         </h1>
-        <p className='text-center   lg:text-xl md:text-xs text-slate-500 '>
+        <p className='text-center   lg:text-xl md:text-xs text-slate-500 font-inter '>
         The Aridian Array is a passionate community of learners, creators, and leaders from PMAS Arid Agriculture University, striving to ignite innovation and build a better future.
         </p>
       </div>
@@ -30,14 +30,15 @@ const About = () => {
       
       <div className='w-full h-auto py-4'>
         
-        <div className='md:flex  px-4 gap-4  '>
-          {content.map((item, index) => (
-            <div key={index} className='md:w-1/2  mb-5 px-1 bg-blue-100 w-full'>
-              <h4 className=' font-medium text-lg leading-[26.4px] text-center md:text-left'>{item.heading || item.Name}</h4>
-              <p className='lg:text-md md:text-xs text-slate-500 text-center md:text-left'>{item.description}</p>
-            </div>
-          ))}
-        </div>
+      <div className='md:flex px-4 gap-4 '>
+  {content.map((item, index) => (
+    <div key={index} className='md:w-1/2 mb-5 px-1 bg-blue-100 w-full flex  justify-center flex-col'>
+      <h4 className='font-medium text-lg leading-[26.4px] font-Title '>{item.heading || item.Name}</h4>
+      <p className='lg:text-md md:text-xs text-slate-500  font-inter'>{item.description}</p>
+    </div>
+  ))}
+</div>
+
       </div>
       <div className="flex justify-center">
         <Button text="Read More" icon={ FaArrowRight} onClick={() => console.log('Submitted')} />

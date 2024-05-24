@@ -13,8 +13,8 @@
     return (
       <div className="container mx-auto px-4 py-8 md:mb-28 mb-14">
         <div className="text-center ">
-          <span className="block text-md text-blue-600" style={{ letterSpacing: '4px' }}>EVENTS</span>
-          <h1 className="lg:text-4xl md:text-2xl text-xl font-medium my-5">What We Do?</h1>
+          <span className="block text-md text-blue-600 font-inter" style={{ letterSpacing: '4px' }}>EVENTS</span>
+          <h1 className="lg:text-4xl md:text-2xl text-xl font-medium my-5 font-Title">What We Do?</h1>
         </div>
 
         {/* Responsive image grid */}

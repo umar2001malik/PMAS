@@ -23,9 +23,9 @@ const Partners = () => {
   return (
     <div className='md:mb-28 mb-14  bg-white '>
       <div className='text-center '>
-        <span className=' text-blue-600' style={{ letterSpacing: '3px' }}>PARTNERS</span>
-        <h1 className='lg:text-4xl md:text-2xl text-xl font-medium my-8 '>Powered By</h1>
-        <p className='text-center lg:text-xl md:text-xs text-slate-500 mx-2'>
+        <span className=' text-blue-600 font-inter' style={{ letterSpacing: '3px' }}>PARTNERS</span>
+        <h1 className='lg:text-4xl md:text-2xl text-xl font-medium my-8 font-Title '>Powered By</h1>
+        <p className='text-center lg:text-xl md:text-xs text-slate-500 mx-2 font-inter'>
           Aridian Array is a passionate, dedicated, and leader.
         </p>
       </div>

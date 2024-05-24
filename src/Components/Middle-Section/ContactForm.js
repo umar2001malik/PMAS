@@ -14,10 +14,10 @@ const ContactForm = () => {
                 className="  w-24 h-12  lg:w-32 lg:h-16    mb-4 mx-auto"
               />
          
-        <h1 className="lg:text-2xl md:text-xl text-xl font-medium    ">
+        <h1 className="lg:text-2xl md:text-xl text-xl font-medium   font-Title ">
          Still have questions?
         </h1>
-        <p className="mt-2 text-center lg:text-xl md:text-xs text-slate-500">
+        <p className="mt-2 text-center lg:text-xl md:text-xs text-slate-500 font-inter">
           Aridian Array is a passionate, dedicated, and leader-building.
         </p>
       </div>

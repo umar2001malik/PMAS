@@ -26,11 +26,11 @@ const Testimonials = () => {
   return (
     <div className="container mx-auto px-4 py-8  md:mb-28 mb-14">
       <div className="text-center ">
-        <span className="block text-md text-blue-600">TESTIMONIALS</span>
-        <h1 className="lg:text-4xl md:text-2xl text-xl font-medium  my-4">
+        <span className="block text-md text-blue-600 font-inter"  style={{ letterSpacing: '3px' }}>TESTIMONIALS</span>
+        <h1 className="lg:text-4xl md:text-2xl text-xl font-medium  my-4 font-Title">
           What do our students say about us?
         </h1>
-        <p className="my-2 text-center lg:text-xl md:text-sm text-slate-500">
+        <p className="my-2 text-center lg:text-xl md:text-sm text-slate-500 font-inter">
           Aridian Array is a passionate, dedicated, and leader-building organization in PMAS Arid Agriculture University.
         </p>
       </div>
@@ -49,14 +49,14 @@ const Testimonials = () => {
 
             <div className="text-center">
               <div className="flex justify-center items-center mb-3">
-                <FaStar className="text-blue-700" />
-                <FaStar className="text-blue-700" />
-                <FaStar className="text-blue-700" />
+                <FaStar className="text-blue-600" />
+                <FaStar className="text-blue-600" />
+                <FaStar className="text-blue-600" />
                 <FaRegStar className="text-gray-300" />
                 <FaRegStar className="text-gray-300" />
               </div>
 
-              <p className="text-gray-700 text-sm">{item.description}</p>
+              <p className="text-gray-700 text-sm font-inter">{item.description}</p>
             </div>
           </div>
         ))}
